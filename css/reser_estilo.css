@@ -3,7 +3,7 @@ body{
     color: #333;
     font-size: 1.2rem;
     line-height: 1.6em;
-    background-color: darkgrey;
+    background: linear-gradient(to bottom, #cefffe, rgb(33, 145, 153));
     margin: 0;
 }
 
@@ -142,6 +142,81 @@ h2{
     text-align: center;
 }
 
+#slogan{
+    font-size: 20px;
+    text-align: center;
+}
+
+.info-covid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: "h2 h2" "if1 if2";
+
+    margin-top: 30px;
+}
+
+.info-covid h2{
+    grid-area: h2;
+    background-color: green;
+}
+
+.info1{
+    grid-area: if1;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: "p p" "img ul";
+    margin-right: 10px;
+}
+
+
+.info1 p{
+    grid-area: p;
+    background: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.info1 img{
+    grid-area: img;
+    width: 150px;
+    height: 150px;
+}
+
+.info1 ul{
+    grid-area: ul;
+}
+
+.info2{
+    grid-area: if2;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: "p p" "img ul";
+    margin-left: 10px;
+}
+
+.info2 p{
+    grid-area: p;
+    background: green;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.info2 img{
+    grid-area: img;
+    width: 150px;
+    height: 150px;
+}
+
+.info2 ul{
+    grid-area: ul;
+}
+
+
 .contenedor-tarjeta{
     width: 100%;
     height: 100%;
@@ -259,7 +334,69 @@ h2{
     box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.6);
 }
 
+.anuncio{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 
+.anuncio .filter{
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    position: absolute;
+}
+
+.anuncio p{
+    width: 50%;
+    position: relative;
+    margin: 70px;
+    color: #cefffe;
+}
+
+.img-anuncio{
+    width: 50%;
+    margin: 30px;
+    position: relative;
+    top: -50px;
+    overflow: hidden;
+}
+
+.img-anuncio ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 300%;
+
+    animation: cambio 10s infinite;
+    animation-direction: alternate;
+}
+
+.img-anuncio li{
+    width: 100%;
+    list-style: none;
+}
+
+.img-anuncio .imganuncio{
+    width: 100%;
+    height: 50vh;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    30% {margin-left: 0;}
+    
+    34% {margin-left: -100%;}
+    63%{margin-left: -100%;}
+
+    67%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
 
 footer{
     background: rgb(9, 180, 137);
@@ -290,14 +427,13 @@ footer .contenedor{
 
 .fila-footer .img-footer{
     background: url("../img/fondo 8.jpg");
-    grid-area: "img";
+    grid-area: img;
     background-size: cover;
-    position: relative;
     width: calc(1vw + 300px);
 }
 
 .fila-footer .contacto-footer{
-    grid-area: "contacto-footer";
+    grid-area: contacto-footer;
     font-size: 20px;
     color: black;
 }
@@ -314,3 +450,4 @@ footer .contenedor{
 .info-contacto{
     list-style: none;
 }
+

@@ -138,19 +138,34 @@ h1{
     color: #387E7D;
 }
 
+h2{
+    text-align: center;
+}
+
 .contenedor-tarjeta{
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    padding: 10px; 
     display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     line-height: 1.4em;
 }
 
+.contenedor-tarjeta a{
+    text-decoration: none;
+}
+
+.contenedor-tarjeta h2{
+    color: black;
+}
+
 .card{
     display: grid;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 10px;
     grid-template-columns: 300px;
     grid-template-rows: 210px 210px 80px;
     grid-template-areas: "image" "text" "service";
@@ -240,12 +255,62 @@ h1{
 
 .card:hover{
     transform: scale(1.2);
+    margin: 60px;
     box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.6);
 }
 
-.footer{
-    background: rgb(9, 180, 137);
 
+
+footer{
+    background: rgb(9, 180, 137);
     height: 25vh;
     width: 100%;
+    
+}
+
+footer .contenedor{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.fila-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img contacto-footer";
+    width: 100vh;
+    font-family: roboto;
+}
+
+.fila-footer .img-footer{
+    background: url("../img/fondo 8.jpg");
+    grid-area: "img";
+    background-size: cover;
+    position: relative;
+    width: calc(1vw + 300px);
+}
+
+.fila-footer .contacto-footer{
+    grid-area: "contacto-footer";
+    font-size: 20px;
+    color: black;
+}
+
+.fila-footer i{
+    font-size: 25px;
+}
+
+.contacto-footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.info-contacto{
+    list-style: none;
 }

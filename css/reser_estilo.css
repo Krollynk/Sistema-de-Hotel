@@ -159,6 +159,7 @@ h2{
 .info-covid h2{
     grid-area: h2;
     background-color: green;
+    padding: 10px;
 }
 
 .info1{
@@ -266,6 +267,22 @@ h2{
 .card-image2{
     grid-area: image;
     background: url("../img/fondo 5.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-image3{
+    grid-area: image;
+    background: url("../img/fondo 7.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-image4{
+    grid-area: image;
+    background: url("../img/fondo 8.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;

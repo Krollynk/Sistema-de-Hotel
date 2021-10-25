@@ -13,7 +13,8 @@
   width: 100%;
   height: 100%;
   padding: 60px 10px;
-  background: url('../images/fondo\ 6.jpg');
+  background: url('../images/fondo_loggin.jpg');
+  background-size: cover;
   overflow: auto;
 }
 
@@ -4284,8 +4285,9 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
 .tile {
   position: relative;
   margin-bottom: 20px;
-  color: #616f77;
-  background-color: white;
+  color: #20272be5;
+  background-color: rgba(236, 115, 226, 0.507);
+  border-radius: 50px;
   filter: alpha(opacity=100);
   opacity: 1;
   -webkit-transition: opacity 0.25s ease-out;

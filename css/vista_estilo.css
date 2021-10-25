@@ -1,19 +1,9 @@
 body{
-    font-family: georgia, times, serif;
     color: #333;
     font-size: 1.2rem;
     line-height: 1.6em;
-    background: linear-gradient(to bottom, #cefffe, rgb(33, 145, 153));
+    background: linear-gradient(to bottom, #c4b3ff, #75cdff);
     margin: 0;
-}
-
-h1{
-    font-size: 2rem;
-    line-height: 1.3em;
-}
-
-p{
-    margin-bottom: 1.6em;
 }
 
 /*Estilo de la cabezera y la barra de navegacion*/
@@ -36,7 +26,7 @@ header{
 
 .nav{
     width: 100%;
-    background-color: rgb(65, 57, 57);
+    background-color: #0F766A;
     background: -moz-linear-gradient(#444, black );
     display: flex;
     align-items: center;
@@ -45,7 +35,7 @@ header{
 }
 
 .nav.active{
-    background-color:rgba(65, 57, 57, 0.795);
+    background-color:#0f766ade;
 }
 
 .logo{
@@ -138,19 +128,35 @@ header{
 }
 
 /*Estilos apra el main*/
-
 h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif,sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.3em;
     text-align: center;
-    letter-spacing: 5px;
+    text-shadow: 2px 2px 3px rgb(20, 20, 20);
+    letter-spacing: 3px;
     color: #387E7D;
 }
 
+p{
+    margin-bottom: 1.6em;
+    font-family: georgia, times, serif;
+}
+
 h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif,sans-serif;
+    font-size: 1.5rem;
     text-align: center;
+    color: #387E7D;
+}
+
+#intro_card{
+    text-shadow: 1px 1px 2px rgb(20, 20, 20);
 }
 
 #slogan{
-    font-size: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 1.1px;
     text-align: center;
 }
 
@@ -168,7 +174,11 @@ h2{
 .info-covid h2{
     grid-area: h2;
     width: 100%;
-    background-color: green;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(20, 20, 20);
+    background-color: rgb(238, 46, 190);
+    border-radius: 50px;
     padding: 10px;
 }
 
@@ -184,8 +194,10 @@ h2{
 
 .info1 p{
     grid-area: p;
-    background: black;
+    background: rgb(26, 26, 231);
+    border-radius: 50px;
     color: white;
+    text-shadow: 1px 1px 2px rgb(20, 20, 20);
     padding: 5px;
     text-align: center;
 }
@@ -210,8 +222,10 @@ h2{
 
 .info2 p{
     grid-area: p;
-    background: green;
+    background: #62A79F;
+    border-radius: 50px;
     color: white;
+    text-shadow: 1px 1px 2px rgb(20, 20, 20);
     padding: 5px;
     text-align: center;
 }
@@ -225,7 +239,7 @@ h2{
     grid-area: ul;
 }
 
-
+/*Estilos tarjeta*/
 .contenedor-tarjeta{
     width: 100%;
     height: 100%;
@@ -282,7 +296,7 @@ h2{
 
 .card-image3{
     grid-area: image;
-    background: url("../img/fondo 7.jpg");
+    background: url("../img/fondo 10.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
@@ -303,7 +317,8 @@ h2{
 
 .card-text .descripcion{
     color: rgb(238, 46, 190);
-    font-size: 18px;
+    font-size: 1.3rem;
+    text-shadow: 0.5px 0.5px 1px rgb(20, 20, 20);
 }
 
 .card-text p{
@@ -335,6 +350,7 @@ h2{
     flex-direction: column;
     padding: 10px;
     color: white;
+    text-shadow: 1px 1px 2px rgb(20, 20, 20);
 }
 
 .card-service .type{
@@ -359,6 +375,8 @@ h2{
     box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.6);
 }
 
+/*Estilos para el anuncio*/
+
 .anuncio{
     width: 100%;
     margin: auto;
@@ -378,10 +396,16 @@ h2{
 }
 
 .anuncio p{
-    width: 50%;
+    width: 40%;
     position: relative;
     margin: 70px;
-    color: #cefffe;
+    color: #000000;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.123);
+    border-radius: 15px;
+    padding: 15px;
 }
 
 .img-anuncio{
@@ -390,6 +414,7 @@ h2{
     position: relative;
     top: -50px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .img-anuncio ul{

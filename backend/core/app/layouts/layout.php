@@ -136,7 +136,7 @@
                         <li class="dropdown nav-profile">
 
                             <a href class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="assets/images/fondo 6.jpg" alt="" class="img-circle size-30x30">
+                                <img src="/hotel-umg/backend/assets/images/fondo 6.jpg" alt="" class="img-circle size-30x30">
                                 <span><?php if(isset($_SESSION["user_id"]) ){ echo UserData::getById($_SESSION["user_id"])->name; 
 
                   }?><i class="fa fa-angle-down"></i></span>
@@ -432,7 +432,7 @@
                         <?php }
                         ?>
 
-                                    <center><h1><b>PLATINUM</b></h1><br><img class="logo_loggin" src="/hotel/img/prueba1.jpg"></center>
+                                    <center><h1><b>PLATINUM</b></h1><br><img class="logo_loggin" src="/hotel-umg/backend/core/app/layouts/loggin.png"></center>
 
 
                                 </div>

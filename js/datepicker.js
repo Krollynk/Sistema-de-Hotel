@@ -28,7 +28,7 @@ function calcular_dias(){
 
 function calcular_precio(){
     var dias = calcular_dias();
-    var precio = parseInt(document.getElementById('precio').textContent);
+    var precio = parseInt(document.getElementById('precio').value);
 
     var precio_final = precio * dias;
     console.log(precio);
@@ -38,6 +38,8 @@ function calcular_precio(){
 }
 
 $('#datepicker2').change(function(){
-    $('#edadCalculada').text(calcular_dias());
+    $('#diascalculados').text(calcular_dias());
     $('#subtotal').text("Q" + calcular_precio());
+    document.getElementById('preciofinal').value = "Q" + calcular_precio();
+    document.getElementById('dias').value = calcular_dias();
 });

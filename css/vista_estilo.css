@@ -38,11 +38,15 @@ header{
     background-color:#0f766ade;
 }
 
+.nav.active #navegacion a{
+    color: rgb(255, 226, 226);
+}
+
 .logo{
     text-decoration: none;
     letter-spacing: 5px;
     font-size: 25px;
-    color: #999;
+    color: rgb(228, 228, 228);
     padding-left: 20px;
 }
 
@@ -62,7 +66,7 @@ header{
     float: right;
     height: 25px;
     padding: 0 20px;
-    color: #999;
+    color: rgb(228, 228, 228);
     text-transform: uppercase;
     font: bold 12px/20px arial, Helvetica;
     text-decoration: none;

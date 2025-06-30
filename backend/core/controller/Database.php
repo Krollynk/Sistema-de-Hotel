@@ -4,8 +4,12 @@
 class Database {
 	public static $db;
 	public static $con;
+	public $user = 'root';
+	public $pass = '';
+	public $host = 'localhost';
+	public $ddbb = 'hotel';
 	function Database(){
-		$this->user="root";$this->pass="";$this->host="localhost:3306";$this->ddbb="hotel";
+		$this->user="root";$this->pass="";$this->host="localhost";$this->ddbb="hotel";
 	} 
 
 
